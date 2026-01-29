@@ -1,0 +1,82 @@
+<!-- !+tab: 사이트 기본 구조 만들어줌 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <!-- 주소부분 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 꾸미는 부분은 head에 넣기 -->
+    <style>
+        body{margin:0}
+        *{margin:0;padding:0} /* 모든 것 마진을 0으로 만들고 불렛/리스트 패딩을 모둔 0으로 만들기/ 기존에 ol,ul은 자체 padding이 있는데 그걸 0으로 만들어 주는 것 */
+        /* 바디의 크기는 요소가 있는 데까지의 크기 */
+
+        /* h1 태그 꾸며주기 */
+        h1{font-size: 100px;color: cadetblue;text-align: center;}
+        .img1{width: 500px;height: 300px;margin: 10px;} /*높이만 줘도 알아서 찌그러짐*/
+
+        /* 모든 div에 대해 w,h,배경, 테두리 동일하게 주기 */
+        div{width: 50%;
+            height: 150px;
+            background-color: blanchedalmond;
+            margin-bottom: 50px; /*바닥 간격*/
+            padding: 50px; /*안쪽 모든 여백*/
+            line-height: 150px; /*줄 높이*/
+            border: 1px solid red; /* 선색, 선종류, 선두께가 다 들어가야 함, 입력 순서 상관 X*/
+            box-shadow: 5px 5px 25px #ff0000aa ; /*x축 1px, 밑으로 1px, aa는 투명도*/
+            text-align: center;
+            margin-left:auto; /*박스 가운데 정렬*/
+            margin-right:auto
+        }
+    </style>
+</head>
+<body>
+    <!-- /..사용하는 사이트 내 모든 요소../ -->
+    <h1>웹크롤링 연습</h1>
+    <h3>홈페이지 연습</h3>
+    <p>타이틀이 아닌 내용 부분<br>enter 쳐도 줄 바꿈 안 됨 -> <br> br로 줄 바꿈하기 </p>
+    
+    <!-- 이미지 가져오기 -->
+    <!-- src: 경로+파일명.확장자
+     alt: 대체 텍스트/ 위도우 나레이션 사용 시 음성으로 읽힘-->
+    <img src="tamsui.jpg" alt="배경 사진" class="img1"> <br>
+
+
+    <!-- 하이퍼 링크 -->
+    <!-- 어디까지 클릭해야 넘어가는지 설정해야 하기 때문에 > 닫기 써야 함 -->
+        <!-- 글씨 클릭하면 주소로 넘어감 -->
+    <a href="https://www.google.com/maps/place/251+%EB%8C%80%EB%A7%8C+%EC%8B%A0%EB%B2%A0%EC%9D%B4+%EC%8B%9C+%EB%8B%A8%EC%88%98%EC%9D%B4+%EA%B5%AC/@25.1836722,121.4225706,13z/data=!3m1!4b1!4m6!3m5!1s0x3442b01943f627e5:0xd240799f71d07db2!8m2!3d25.1719805!4d121.4433706!16zL20vMDJxcGZn?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D"> 구글 단수이 검색</a><br><br><br>
+        <!-- 그림 눌렀을 때 넘어가기 -->
+    <a href="https://www.google.com/maps/place/251+%EB%8C%80%EB%A7%8C+%EC%8B%A0%EB%B2%A0%EC%9D%B4+%EC%8B%9C+%EB%8B%A8%EC%88%98%EC%9D%B4+%EA%B5%AC/@25.1836722,121.4225706,13z/data=!3m1!4b1!4m6!3m5!1s0x3442b01943f627e5:0xd240799f71d07db2!8m2!3d25.1719805!4d121.4433706!16zL20vMDJxcGZn?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D"><img src="tamsui.jpg" alt="배경"></a>
+    
+
+    <!-- 목록 list: order list-->
+    <!-- li: 리스트 만들어주는 명령어 -->
+    <ol>
+        <li>홍길동</li>
+        <li>김길동</li>
+        <li>박길동</li>
+        <li>신길동</li>
+    </ol>
+    <!-- 불렛 리스트 -->
+    <ul>
+        <li>홍길동</li>
+        <li>김길동</li>
+        <li>박길동</li>
+        <li>신길동</li>
+    </ul>
+
+    <!-- divide: 사각형 박스 하나 그려넣는 것 -->
+    <div>
+        div box1 그리기
+
+    </div>
+    <div>
+        div box2 그리기
+    </div>
+
+    <!-- 홈페이지 언어: html(뼈대), css(꾸미기), javascript(동적 요소) -->
+</body>
+</html>
